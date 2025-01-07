@@ -1,18 +1,16 @@
 html, 
 
 html{
-    Overflow-y: hidden;
+    height: 100%;
     padding: 0;
     margin: 0;
 }
 
 *  {
-    overflow: hidden; 
+    overflow: scroll; 
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    outline-style: solid;
-    outline-color: red;
+    font-family: Garamond, "Times New Roman", Times, serif;
 }
 
 body{
@@ -22,58 +20,99 @@ body{
 
 img{
     width: 100%;
-    height: auto;
+    height: 100%;
     z-index: 2;
+}
+
+.formatHalf{
+    width: 50%;
+    height: 100%; 
+    float: left; 
+    background-color: #101C1C;
 }
 
 form{
     display: inline-block;
     margin: 50px;
-    margin-top: 250px;
     padding: 25px;
-    padding-left: 170px;
-    padding-right: 170px;
-    background-color:rgba(28, 88, 88, 0.5);
-    width: 100%; 
-    margin-left: 0px;
+    outline-style: solid; 
+    outline-color: #579482;
+    color: #579482;
+    display: grid; 
+    height: auto;
 }
 
-#overlay {
-    position: relative; /* Sit on top of the page content */
-    float: left;
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 5px;
-    font-weight: bold;
-    background-color: #101C1C; 
-    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  }
+h2{
+    font-size: 40px;
+    margin: 7px;  
+}
 
-  #overText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 50px;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-  }
+h3{
+    font-size: 30px; 
+    margin: 5px;
+}
 
-.formatHalf{
-    width: 50%;
-    float: left; 
+p{
+    text-align: left;
+    font-size: 15px;
+}
+
+input{
+    margin: 3x;
+    padding: 5px; 
+    width: 100%;
+    outline-style: solid; 
+    outline-color: #579482;
     background-color: #101C1C;
-    height: 1120px;
+    color: #579482;
 }
 
-.title{
-    margin-top: 0; 
-    margin-left: 0; 
+.signupButt{
+    margin-top: 20px; 
+    font-size: 25px;
+    padding: 5px; 
+    border: none; 
+    background: none; 
 }
 
+.signIn{ 
+    display: flex; 
+    margin-top: 20px; 
+    font-size: 25px;
+    border: none; 
+    background: none;
+}
+
+.signupButt:hover{
+    background-color: #246085;
+    color: #579482;
+}
+
+.bottomSignIn{
+    margin-left: 5px;
+}
+
+input:focus{
+    outline-color: #246085;
+}
+
+input:invalid{ 
+    outline-color: #C6A76E
+}
+
+.overText {
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    height: 85px;
+    width: 50%;
+    color: #C6A76E;
+    bottom: 200px;
+    z-index: 1;
+    font-size: 25px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}

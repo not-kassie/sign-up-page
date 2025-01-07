@@ -11,20 +11,30 @@
         <main>
             <div class="formatHalf">
                 <img src="testPic.jpg" alt="Couple in forest painting">
-                <div id="overlay"> 
-                    <div id="overText">The Odin Project</div>
+                <div class="overText">
+                    <a href="https://www.theodinproject.com/dashboard" style="text-decoration:none;">
+                        <img src="odin-lined.png" alt="Odin Project Logo, drawing of Odin" class="logo">
+                    </a>
+                    The Odin Project
                 </div>
             </div>
             <div class="formatHalf">
-                <form action ="testing.com/path" method="post">
-                    <h2>Sign Up</h2>
-                    <input type="text" id="fname" name="fname" placeholder="First Name" required>
-                    <input type="text" id="lname" name="lname" placeholder="Last Name" required>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-                    <input type="password" id="pwd" name="pwd" placeholder="Password" required>
-                    <input type="password" id="confirm_pwd" name="confirm_pwd" placeholder="Confirm Password" required>
-                    <input type="submit" value="Submit">
+                <form action ="frame.html" method="post">
+                    <h2>A tale as old as time...</h2>
+                    <h3>Start your next chapter</h3>
+                    <p>Enter your name:</p>
+                    <input type="text" id="fname" name="fname" minlength="1">
+                    <p>Enter your email:</p>
+                    <input type="email" id="email" name="email">
+                    <p>Enter a password:</p>
+                    <input type="password" id="pwd" name="pwd" minlength="8">
+                    <p>Re-enter your password:</p>
+                    <input type="password" id="confirm_pwd" name="confirm_pwd" minlength="8">
+                    <input type="submit" value="Sign Up" class = signupButt>
+                    <div class="signIn"> 
+                        <p class="bottomSignIn">Already signed up?</p>
+                        <p class ="bottomSignIn"><a href="frame.html" style="color:#579482; text-decoration:underline;">Sign in.</a></p>
+                    </div>
                 </form>
             </div>
         </main>
